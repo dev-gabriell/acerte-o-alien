@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerte o Alien</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="icon" href="./src/images/life.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Zen+Dots&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: #ffd700;">Time Left</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: #ffd700;">Your Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/life.png" alt="Foto do jogador" height="70px">
+                <h2>x</h2>
+                <h2 id="life">3</h2>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square enemy" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+        <input type="button" name="button" class="button" id="button" value="Jogar Novamente" onclick="restart()">
+
+
+        <div class="infor">
+            <h2>Final score:</h2>
+            <h2 id="totalscore">0</h2>
+            <h2>O jogo irá Reiniciar</h2>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <h2>Redes Sociais</h2>
+        <div class="back-img">
+            <a href="https://www.instagram.com/eii_biel3/" target="_blank">
+                <img class="insta" src="./img/Instagram.png" alt="logotipo do instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-sousa-a7654927a/" target="_blank">
+                <img class="insta" src="./img/Linkedin.png" alt="logotipo do linkedin">
+            </a>
+            <a href="https://github.com/dev-gabriell" target="_blank">
+                <img class="insta" src="./img/Github.png" alt="logotipo do github">
+            </a>
+            <a href="https://www.artstation.com/gabriel_3d" target="_blank">
+                <img class="insta" src="./img/Artstation.png" alt="logotipo do artstation">
+            </a>
+        </div>
+        <p>Criado por <strong> Gabriel Sousa</strong></p>
+    </footer>
+
+
+
+
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+
+</html>
